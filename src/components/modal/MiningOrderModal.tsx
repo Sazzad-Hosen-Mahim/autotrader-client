@@ -25,23 +25,56 @@ const MiningOrderModal: React.FC<MiningOrderModalProps> = ({ open, setOpen }) =>
                 <div className="mb-6 flex justify-center">
                     <div className="relative">
                         {/* You can replace this with an actual image */}
-                        <div className="w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center animate-pulse">
+                        <div className="w-24 h-24 bg-gradient-to-br from-teal to-primaryButton rounded-full flex items-center justify-center animate-pulse">
                             <svg
-                                className="w-12 h-12 text-white"
+                                className="w-16 h-16"
+                                viewBox="0 0 120 120"
                                 fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
                             >
+                                <defs>
+                                    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" stopColor="white" stopOpacity="1" />
+                                        <stop offset="100%" stopColor="white" stopOpacity="0.2" />
+                                    </radialGradient>
+                                </defs>
+
+                                {/* Soft glowing core */}
+                                <circle
+                                    cx="60"
+                                    cy="60"
+                                    r="16"
+                                    fill="url(#glow)"
+                                    className="animate-pulse"
+                                />
+
+                                {/* Orbit ring */}
+                                <circle
+                                    cx="60"
+                                    cy="60"
+                                    r="36"
+                                    stroke="rgba(255,255,255,0.35)"
+                                    strokeWidth="3"
+                                    strokeDasharray="6 10"
+                                    className="animate-spin origin-center"
+                                    style={{ animationDuration: "3s" }}
+                                />
+
+                                {/* Fast accent arc */}
                                 <path
+                                    d="M60 24
+           A36 36 0 0 1 96 60"
+                                    stroke="white"
+                                    strokeWidth="4"
                                     strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                                    className="animate-spin origin-center"
+                                    style={{ animationDuration: "1s" }}
                                 />
                             </svg>
+
                         </div>
                         {/* Optional: Add spinning effect */}
-                        <div className="absolute inset-0 border-4 border-yellow-400 border-t-transparent rounded-full animate-spin"></div>
+                        {/* <div className="absolute inset-0 border-4 border-yellow-400 border-t-transparent rounded-full animate-spin"></div> */}
                     </div>
                 </div>
 

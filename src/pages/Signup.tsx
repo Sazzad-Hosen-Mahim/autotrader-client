@@ -199,7 +199,7 @@ const Signup = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-golden text-white text-xl font-bold p-2 rounded-md hover:bg-gray-800 disabled:opacity-50"
+            className="w-full bg-teal text-white text-xl font-bold p-2 rounded-md hover:bg-gray-800 disabled:opacity-50"
           >
             {isLoading ? "Registering..." : "Register"}
           </button>

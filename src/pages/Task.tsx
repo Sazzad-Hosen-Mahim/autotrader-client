@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ChevronRight, Star } from "lucide-react";
-import prod1 from "@/assets/product/prod-1.webp";
-import prod2 from "@/assets/product/prod-2.webp";
-import prod3 from "@/assets/product/prod-3.webp";
-import prod4 from "@/assets/product/prod-4.webp";
-import prod5 from "@/assets/product/prod-5.webp";
+import prod1 from "@/assets/product/British Style – Jaguar E Type V12.jpg";
+import prod2 from "@/assets/product/air-filter.jpg";
+import prod3 from "@/assets/product/Car-piston.jpg";
+import prod4 from "@/assets/product/tyre.jpg";
+import prod5 from "@/assets/product/Exhaust.jpg";
 import AccountDetailsModal from "@/components/modal/AccountDetailsModal";
 import PackageSelectionModal from "@/components/modal/PackageSelectionModal";
 import MysteryBoxModal from "@/components/modal/MysteryBoxModal";
@@ -35,31 +35,31 @@ const Task: React.FC = () => {
     {
       id: 1,
       image: prod1,
-      title: "Nepal Kyanite Steel Bangle (Riya)",
+      title: "British Style – Jaguar E Type V12",
       reviews: "6,507 Reviews",
     },
     {
       id: 2,
       image: prod2,
-      title: "Purple Diamond Ring in 14K Gold",
+      title: "Air Filter - Car (Red)",
       reviews: "16,772 Reviews",
     },
     {
       id: 3,
       image: prod3,
-      title: "Sky Blue Topaz Platinum Pendant",
+      title: "Piston 2600 U",
       reviews: "14,803 Reviews",
     },
     {
       id: 4,
       image: prod4,
-      title: "hmIPULSE FLEECE REGULAR CREW",
+      title: "Tyre 3600 F - Black",
       reviews: "5,458 Reviews",
     },
     {
       id: 5,
       image: prod5,
-      title: "DBU 88 REPLICA JERSEY S/S",
+      title: "DBU 88 Exhaust German",
       reviews: "10,237 Reviews",
     },
   ];
@@ -240,7 +240,7 @@ const Task: React.FC = () => {
           <ChevronRight className="w-4 h-4 mx-1" />
           <span className="text-gray-900">Go Shopping</span>
         </div>
-        <h1 className="text-2xl font-bold text-gray-900">Juwelo Order</h1>
+        <h1 className="text-2xl font-bold text-gray-900">Autotrader Order</h1>
       </div>
 
       {/* Tab Headers */}
@@ -303,22 +303,22 @@ const Task: React.FC = () => {
         <div className="grid grid-cols-2 gap-2 mb-4 my-8">
           <button
             onClick={() => setOpenAccountModal(true)}
-            className="py-4 cursor-pointer rounded-sm text-white bg-gray-600 hover:bg-gray-700 font-medium transition-colors"
+            className="py-4 cursor-pointer rounded-sm text-white bg-teal hover:bg-teal/80 font-medium transition-colors"
           >
             Account Details
           </button>
 
-          <Link to="/order-record" className="py-4 cursor-pointer rounded-sm text-white text-center bg-gray-600 hover:bg-gray-700 font-medium transition-colors">
+          <Link to="/order-record" className="py-4 cursor-pointer rounded-sm text-white text-center bg-teal hover:bg-teal/80 font-medium transition-colors">
             Order Record
           </Link>
         </div>
         <button
           onClick={handleStartClick}
-          className="w-full py-4 text-white cursor-pointer bg-black rounded-sm hover:bg-gray-900 font-semibold text-lg transition-colors"
+          className="w-full py-4 text-white cursor-pointer bg-primaryButton rounded-sm hover:bg-gray-900 font-semibold text-lg transition-colors"
         >
           Start{" "}
           <span className="text-gray-200 ms-2">
-            {userData?.data?.completedOrdersCount} / 25
+            {userData?.data?.completedOrdersCount} / 30
           </span>
         </button>
       </div>

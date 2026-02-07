@@ -118,16 +118,55 @@ const Product: React.FC = () => {
     console.log((error as any)?.data?.message, "error in product page")
 
 
+    // if (isLoading || isFetching) {
+    //     return (
+    //         <div className="max-w-[500px] mx-auto bg-white h-screen flex items-center justify-center">
+    //             <div className="text-center">
+    //                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+    //                 <p className="mt-4 text-gray-600">Loading product...</p>
+    //             </div>
+    //         </div>
+    //     );
+    // }
+
     if (isLoading || isFetching) {
         return (
             <div className="max-w-[500px] mx-auto bg-white h-screen flex items-center justify-center">
                 <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
-                    <p className="mt-4 text-gray-600">Loading product...</p>
+
+                    {/* Engine Piston Loader */}
+                    <div className="flex gap-4 justify-center items-start h-20 scale-y-[-1]">
+
+
+                        {/* Piston 1 */}
+                        <div className="piston piston-delay-0">
+                            <div className="piston-head"></div>
+                            <div className="piston-rod"></div>
+                        </div>
+
+                        {/* Piston 2 */}
+                        <div className="piston piston-delay-1">
+                            <div className="piston-head"></div>
+                            <div className="piston-rod"></div>
+                        </div>
+
+                        {/* Piston 3 */}
+                        <div className="piston piston-delay-2">
+                            <div className="piston-head"></div>
+                            <div className="piston-rod"></div>
+                        </div>
+                    </div>
+
+                    <p className="mt-6 text-gray-600 text-sm tracking-wide">
+                        Loading product...
+                    </p>
                 </div>
             </div>
         );
     }
+
+
+
 
     if (error || !product) {
         return (
@@ -277,7 +316,7 @@ const Product: React.FC = () => {
               lg:py-4 lg:px-6 rounded-lg font-semibold cursor-pointer lg:text-lg transition-colors
               ${isConfirming
                                 ? "bg-gray-400 text-gray-200 cursor-not-allowed"
-                                : "bg-gray-900 text-white hover:bg-gray-800"
+                                : "bg-primaryButton text-white hover:bg-gray-800"
                             }
             `}
                     >

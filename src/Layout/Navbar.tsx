@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { MdHistory, MdPermContactCalendar } from "react-icons/md";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logo from "@/assets/juwelo-logo.png";
+import logo from "@/assets/autotrader-logo-new.png";
 import "./Navbar.css";
 import { MdEvent } from "react-icons/md";
 import { Link, useNavigate, useLocation } from "react-router-dom";
@@ -88,7 +88,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#181C14] shadow-lg w-full relative">
+      <nav className="bg-golden shadow-lg w-full relative">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo with Conditional Sheet */}
@@ -97,7 +97,7 @@ const Navbar = () => {
                 <Sheet open={isOpen} onOpenChange={setIsOpen}>
                   <SheetTrigger asChild>
                     <button
-                      className="text-white hover:text-gray-300 focus:outline-none transition-all duration-200 hover:scale-110 active:scale-95"
+                      className="text-black hover:text-gray-300 focus:outline-none transition-all duration-200 hover:scale-110 active:scale-95"
                       aria-label="Open menu"
                     >
                       <Menu className="h-6 w-6" />
@@ -119,7 +119,7 @@ const Navbar = () => {
                         <div className="text-sm text-gray-500">
                           UID:{localStorage.getItem("userId") || "138334"}
                         </div>
-                        <button className="mt-4 w-[90%] bg-black text-white py-2.5 rounded-md font-medium hover:bg-gray-800 transition-colors">
+                        <button className="mt-4 w-[90%] bg-primaryButton cursor-pointer text-white py-2.5 rounded-md font-medium hover:bg-gray-800 transition-colors">
                           Cash In
                         </button>
                       </div>
@@ -237,13 +237,13 @@ const Navbar = () => {
             <div className="hidden md:flex">
               <a
                 href="/event"
-                className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 <MdEvent className="w-6 h-6" />
               </a>
               <a
                 href="/contact"
-                className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 <MdPermContactCalendar className="w-6 h-6" />
                 {/* <MdEmojiEvents className="w-6 h-6" /> */}

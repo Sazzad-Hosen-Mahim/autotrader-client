@@ -5,18 +5,18 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Contact = () => {
   return (
     <div>
-      <div className="relative bg-[url('/src/assets/contact/contact.jpg')] h-[680px] bg-cover bg-center flex items-center justify-center">
+      <div className="relative bg-[url('/src/assets/contact/new-contact.jpg')] h-[680px] bg-cover bg-center flex items-center justify-center">
         {/* Optional overlay */}
         <div className="absolute inset-0 bg-black/45" />
 
         {/* Middle Text Box */}
         <div className="relative z-10  mx-8 px-4 py-10 max-w-2xl rounded-lg shadow-xl text-center">
           <h2 className="text-4xl text-white font-semibold mb-5">
-            Juwelo Help Center
+            Autotrader Help Center
           </h2>
 
           <p className="text-white text-lg leading-relaxed">
-            Our jewelry is more than an accessory—it’s an expression of identity,
+            Our car parts is more than an accessory—it’s an expression of identity,
             emotion, and timeless elegance. Each piece is thoughtfully designed to
             celebrate life’s most precious moments with grace and sophistication.
           </p>

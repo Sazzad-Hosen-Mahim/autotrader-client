@@ -237,7 +237,7 @@ const BindAccount = () => {
             <button
                 onClick={handleSubmit}
                 disabled={isLoading || !accountType || !name}
-                className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed mt-6"
+                className="w-full bg-primaryButton text-white py-2 rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed mt-6"
             >
                 {isLoading ? "Binding..." : "Bind Account"}
             </button>

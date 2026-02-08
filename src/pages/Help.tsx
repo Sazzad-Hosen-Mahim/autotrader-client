@@ -1,5 +1,5 @@
 import { ChevronRight } from "lucide-react";
-import helpImage from "@/assets/help/help.jpg"; // use any banner image you like
+import helpImage from "@/assets/help/help-new.jpg"; // use any banner image you like
 
 export default function Help() {
     return (
@@ -37,6 +37,13 @@ export default function Help() {
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
                             After completing every set of orders, you may submit <strong>Sell Out</strong> once only. Please bind your bank information on the platform before submitting a Sell Out request.
+                        </p>
+                    </div>
+
+                    <div className="flex items-start">
+                        <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
+                        <p className="text-base">
+                            A <strong>Smart Felcon Order</strong> is a reward that allows all members to earn more profit and is developed by <strong>traders</strong>, so members and agents can earn up to 7 times the <strong>Incentive.</strong> This is very rare and agents only have one (minimum) to two (maximum) chances in each round to get this reward.
                         </p>
                     </div>
 

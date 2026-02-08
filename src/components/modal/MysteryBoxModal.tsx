@@ -126,11 +126,11 @@ const MysteryBoxModal: React.FC<MysteryBoxModalProps> = ({
                     {/* Header */}
                     <div className="text-center mb-8">
                         <h2 className="text-4xl font-bold text-white mb-2">
-                            Crown Box!
+                            Smart Flip Box!
                         </h2>
                         <p className="text-gray-300 text-lg">
                             {selectedBox === null
-                                ? "Choose Your Crown Box"
+                                ? "Choose Your Smart Flip Box"
                                 : "Congratulations!"}
                         </p>
                     </div>
@@ -203,7 +203,7 @@ const MysteryBoxModal: React.FC<MysteryBoxModalProps> = ({
                                 <p className="text-yellow-400 text-4xl font-bold">
                                     {mysteryBoxData.method === "cash" ? "৳" : ""}{mysteryBoxData.amount}
                                 </p>
-                                <p className="text-yellow-400 text-4xl font-bold">{mysteryBoxData?.method === "12x" ? "Crown Order" : ""}</p>
+                                <p className="text-yellow-400 text-4xl font-bold">{mysteryBoxData?.method === "12x" ? "Smart Flip Box" : ""}</p>
                             </div>
                             <button
                                 onClick={onClose}

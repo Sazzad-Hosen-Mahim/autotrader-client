@@ -95,14 +95,14 @@ const Product: React.FC = () => {
 
     const getOrderLabel = () => {
         if (!purchaseData?.data?.isAdminAssigned) {
-            return "(Mining Order)";
+            return "(Snatching Order)";
         }
 
         if (
             purchaseData?.data?.mysteryboxMethod === "12x" &&
             purchaseData?.data?.mysteryboxAmount === "12x"
         ) {
-            return "(Crown Order)";
+            return "(Smart Felcon Order)";
         }
 
         if (

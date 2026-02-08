@@ -80,7 +80,7 @@ const MiningOrderModal: React.FC<MiningOrderModalProps> = ({ open, setOpen }) =>
 
                 {/* Mining Order Text */}
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                    Mining Order...
+                    Snatching Order...
                 </h2>
 
                 {/* Optional: Loading dots */}

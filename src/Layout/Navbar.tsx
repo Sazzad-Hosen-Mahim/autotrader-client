@@ -97,7 +97,7 @@ const Navbar = () => {
                 <Sheet open={isOpen} onOpenChange={setIsOpen}>
                   <SheetTrigger asChild>
                     <button
-                      className="text-black hover:text-gray-300 focus:outline-none transition-all duration-200 hover:scale-110 active:scale-95"
+                      className="text-black cursor-pointer focus:outline-none transition-all duration-200 hover:scale-110 active:scale-95"
                       aria-label="Open menu"
                     >
                       <Menu className="h-6 w-6" />

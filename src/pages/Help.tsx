@@ -43,7 +43,7 @@ export default function Help() {
                     <div className="flex items-start">
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
-                            A <strong>Smart Felcon Order</strong> is a reward that allows all members to earn more profit and is developed by <strong>traders</strong>, so members and agents can earn up to 7 times the <strong>Incentive.</strong> This is very rare and agents only have one (minimum) to two (maximum) chances in each round to get this reward.
+                            A <strong>Smart Falcon Order</strong> is a reward that allows all Consultant to earn more profit and is developed by <strong>traders</strong>, so members and Consultant can earn up to 3 times the <strong>Incentive</strong>. This is very rare and Consultant only have Zero (0-2) to two (maximum) chances in each round to get this reward.
                         </p>
                     </div>
 

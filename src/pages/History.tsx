@@ -249,7 +249,8 @@ const History = () => {
                                         </div>
                                         <div>
                                             <p className="font-semibold text-gray-800 capitalize">
-                                                {item.historyType}
+                                                {/* {item.historyType} */}
+                                                {item?.notes ? item?.notes : item?.historyType}
                                             </p>
                                             <p className="text-sm text-gray-500">
                                                 {formatDate(item.time)}
@@ -262,13 +263,13 @@ const History = () => {
                                         </p>
                                     </div>
                                 </div>
-                                {
+                                {/* {
                                     item?.notes && (
                                         <p className="text-sm text-gray-500 mt-3">
                                             Notes: {item.notes}
                                         </p>
                                     )
-                                }
+                                } */}
                             </div>
                         ))}
                     </div>

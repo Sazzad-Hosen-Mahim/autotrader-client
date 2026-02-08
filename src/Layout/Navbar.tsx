@@ -21,7 +21,7 @@ import { useAppDispatch, useAppSelector } from "@/hooks/useRedux";
 import { logout } from "@/store/Slices/AuthSlice/authSlice";
 import { useGetSingleUserQuery } from "@/store/api/user/userApi";
 import AccountDetailsModal from "@/components/modal/AccountDetailsModal";
-import { MdEmojiEvents } from "react-icons/md";
+// import { MdEmojiEvents } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -125,7 +125,7 @@ const Navbar = () => {
                       </div>
 
                       {/* Quick Actions Grid */}
-                      <div className="grid grid-cols-4 gap-4 px-6 py-2 border-b border-gray-200">
+                      <div className="grid grid-cols-3 gap-4 px-6 py-2 border-b border-gray-200">
                         <Link to="/cash-out">
                           <button className="flex flex-col items-center cursor-pointer gap-2 hover:opacity-70 transition-opacity">
                             <div className="w-12 h-12 flex items-center justify-center">
@@ -144,15 +144,14 @@ const Navbar = () => {
                             </span>
                           </button>
                         </Link>
-                        <Link to="/score" className="flex flex-col items-center cursor-pointer gap-2 hover:opacity-70 transition-opacity">
+                        {/* <Link to="/score" className="flex flex-col items-center cursor-pointer gap-2 hover:opacity-70 transition-opacity">
                           <button className="cursor-pointer">
                             <div className="w-12 h-12 flex items-center justify-center">
-                              {/* <Award className="w-6 h-6" /> */}
                               <MdEmojiEvents className="w-7 h-7" />
                             </div>
                             <span className="text-xs text-center">Score</span>
                           </button>
-                        </Link>
+                        </Link> */}
                         <button
                           onClick={handleAccountDetailsClick}
                           className="flex flex-col items-center cursor-pointer gap-2 hover:opacity-70 transition-opacity"

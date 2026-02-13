@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
         <img src={footerImg} alt="Footer Logo" />
       </div>
       <div className="mt-4">
-        <p className="mt-4 text-sm text-black">
-          &copy; {new Date().getFullYear()} Juwelo. All rights reserved.
+        <p className="mt-4 text-sm text-gray-600">
+          &copy; {new Date().getFullYear()} Autotrader. All rights reserved.
         </p>
       </div>
     </footer>

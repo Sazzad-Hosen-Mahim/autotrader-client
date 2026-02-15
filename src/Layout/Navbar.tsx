@@ -227,7 +227,7 @@ const Navbar = () => {
                 className="text-white text-2xl font-bold flex items-center"
               >
                 <span className="text-xl">
-                  <img src={logo} alt="JUWELO" className="w-36 h-8" />
+                  <img src={logo} alt="Autotrader Logo" className="w-36 h-8" />
                 </span>
               </a>
             </div>

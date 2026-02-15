@@ -209,7 +209,7 @@ const Product: React.FC = () => {
             )}
 
             {/* Product Image */}
-            <div className="w-full h-[300px] object-contain bg-gray-100 overflow-hidden">
+            <div className="w-full h-[350px] object-contain bg-gray-100 overflow-hidden">
                 <img
                     src={product.poster}
                     alt={product.name}
@@ -306,7 +306,7 @@ const Product: React.FC = () => {
             </div>
 
             {/* Bottom Action Buttons */}
-            <div className="fixed bottom-24 left-0 right-0 bg-white border-t border-gray-200 p-2 max-w-[500px] mx-auto">
+            <div className="fixed bottom-18 left-0 right-0 bg-white border-t border-gray-200 p-2 max-w-[500px] mx-auto">
                 <div className="grid grid-cols-2 gap-3">
 
                     <button

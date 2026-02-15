@@ -80,7 +80,7 @@ const AccountDetailsModal: React.FC<AccountDetailsModalProps> = ({
                         <div>
                             <p className="text-sm text-gray-700 font-bold">Current Snatching Order</p>
                             <p className="text-gray-700 font-semibold ">
-                                {data?.completedOrdersCount} / 30
+                                {data?.completedOrdersCount} / 25
                             </p>
                         </div>
                         <div>

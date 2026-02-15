@@ -318,7 +318,7 @@ const Task: React.FC = () => {
         >
           Start{" "}
           <span className="text-gray-200 ms-2">
-            {userData?.data?.completedOrdersCount} / 30
+            {userData?.data?.completedOrdersCount} / 25
           </span>
         </button>
       </div>

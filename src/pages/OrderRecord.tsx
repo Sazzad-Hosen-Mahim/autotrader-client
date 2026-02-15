@@ -90,7 +90,7 @@ const OrderRecord = () => {
                                 <div className="p-4">
                                     {/* Header */}
                                     <div className="mb-3">
-                                        <p className="text-xs text-gray-500 mb-1">Juwelo Order</p>
+                                        <p className="text-xs text-gray-500 mb-1">Autotrader Order</p>
                                         <h3 className="text-lg font-semibold text-gray-900">
                                             {product.name}
                                         </h3>

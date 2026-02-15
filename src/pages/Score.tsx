@@ -154,7 +154,7 @@ const Score = () => {
                         </li>
                         <li className="flex items-start">
                             <span className="mr-2">•</span>
-                            <span>Membership reach 100 points, Apply Entire Amount Sell Out Credit point down during Sell Out process Need to make Credit score insurance</span>
+                            <span>Membership reach 100 points, Apply Entire Amount Cash Out Credit point down during Cash Out process Need to make Credit score insurance</span>
                         </li>
                     </ul>
                 </div>

@@ -28,7 +28,7 @@ const ConfirmWithdrawPasswordModal = ({
 
     const handleConfirm = () => {
         if (!password) {
-            toast.error("Please enter your sell out password");
+            toast.error("Please enter your Cash Out password");
             return;
         }
 
@@ -43,7 +43,7 @@ const ConfirmWithdrawPasswordModal = ({
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
             <div className="bg-white rounded-lg shadow-lg w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-200">
                 <div className="flex items-center justify-between p-4 ">
-                    <h2 className="text-lg font-semibold text-center w-full">Confirm Sell Out Password</h2>
+                    <h2 className="text-lg font-semibold text-center w-full">Confirm Cash Out Password</h2>
                     {/* <button onClick={onClose} className="p-1 rounded-full cursor-ponter hover:bg-slate-100">
                         <X className="w-5 h-5 text-slate-500" />
                     </button> */}
@@ -53,7 +53,7 @@ const ConfirmWithdrawPasswordModal = ({
                     <div className="space-y-2 relative">
                         <Input
                             type={showPassword ? "text" : "password"}
-                            placeholder="Enter sell out password"
+                            placeholder="Enter Cash Out password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="bg-slate-50 border-slate-200 focus:bg-white transition-colors"

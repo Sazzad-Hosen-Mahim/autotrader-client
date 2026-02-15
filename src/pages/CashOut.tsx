@@ -117,7 +117,7 @@ const CashOut = () => {
         const withdrawAmount = Number(amount);
 
         if (!amount || isNaN(withdrawAmount) || withdrawAmount < 500) {
-            toast.error("Minimum Sell Out is ৳500");
+            toast.error("Minimum Cash Out is ৳500");
             return;
         }
 
@@ -138,7 +138,7 @@ const CashOut = () => {
 
     return (
         <div className="max-w-md mx-auto p-4 space-y-4">
-            <h1 className="text-2xl font-bold">Sell Out</h1>
+            <h1 className="text-2xl font-bold">Cash Out</h1>
 
             {/* Wallet Funds Card */}
             <Card className="bg-gradient-to-br from-slate-700 to-slate-800 text-white">
@@ -186,10 +186,10 @@ const CashOut = () => {
                 </Card>
             </div>
 
-            {/* Sell Out Amount */}
+            {/* Cash Out Amount */}
             <div>
                 <Label htmlFor="amount" className="text-sm font-medium text-slate-600 mb-2 block">
-                    Sell Out Amount
+                    Cash Out Amount
                 </Label>
                 <div className="relative">
                     <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-600 font-medium">
@@ -210,17 +210,17 @@ const CashOut = () => {
             {/* Tips */}
             <Card className="bg-slate-50 border-slate-200">
                 <CardContent className="pt-1">
-                    <p className="text-xs font-medium text-slate-800 mb-2">Rules : Minimum Sell Out ৳500</p>
+                    <p className="text-xs font-medium text-slate-800 mb-2">Rules : Minimum Cash Out ৳500</p>
                     <p className="text-xs font-medium text-slate-700 mb-1">Tips:</p>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                        Please bind in the correct bank account information. If the Sell Out is successful
+                        Please bind in the correct bank account information. If the Cash Out is successful
                         but the bank account details are wrong, platform will not be responsible. Therefore,
                         please double-check your bank account information.
                     </p>
                 </CardContent>
             </Card>
 
-            {/* Sell Out Button */}
+            {/* Cash Out Button */}
             <Button
                 onClick={handleSellOutClick}
                 disabled={!hasWithdrawalAddress || isCreatingWithdraw}
@@ -232,7 +232,7 @@ const CashOut = () => {
                         Processing...
                     </>
                 ) : (
-                    "Sell Out"
+                    "Cash Out"
                 )}
             </Button>
 

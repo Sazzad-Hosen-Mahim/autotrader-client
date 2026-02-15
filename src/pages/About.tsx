@@ -34,7 +34,7 @@ export default function AboutUs() {
           <div className="flex items-start">
             <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
             <p className="text-base">
-              Autotrader New York is an international platform company that provides gold and jewelry buying, selling and trading. Its main goal is to help brands and retailers collect, manage and nationally order transactions.
+              If the first Cash Out exceeds <strong>500,000 taka</strong>, a <strong>50% security Cash In</strong> is required for safety verification. The Cash Out can be completed after <strong>1 hour</strong>.
             </p>
           </div>
 

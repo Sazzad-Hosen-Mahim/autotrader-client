@@ -35,11 +35,11 @@ const WithdrawPassword = () => {
 
         try {
             await updateWithdrawPassword({ userId, withdrawPassword: password }).unwrap();
-            toast.success("Sell Out password set successfully");
+            toast.success("Cash Out password set successfully");
             navigate("/cash-out");
         } catch (err: any) {
             console.error(err);
-            toast.error(err?.data?.message || "Failed to set sell out password");
+            toast.error(err?.data?.message || "Failed to set Cash Out password");
         }
     };
 

@@ -36,7 +36,7 @@ export default function Help() {
                     <div className="flex items-start">
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
-                            After completing every set of orders, you may submit <strong>Sell Out</strong> once only. Please bind your bank information on the platform before submitting a Sell Out request.
+                            After completing every set of orders, you may submit <strong>Cash Out</strong> once only. Please bind your bank information on the platform before submitting a Cash Out request.
                         </p>
                     </div>
 
@@ -50,42 +50,42 @@ export default function Help() {
                     <div className="flex items-start">
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
-                            Click the <strong>"Sell Out"</strong> button after entering the amount you want to Sell Out, then enter your Sell Out password to proceed. The actual arrival time depends on your bank’s processing time.
+                            Click the <strong>"Cash Out"</strong> button after entering the amount you want to Cash Out, then enter your Cash Out password to proceed. The actual arrival time depends on your bank’s processing time.
                         </p>
                     </div>
 
                     <div className="flex items-start">
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
-                            Accounts are not allowed to keep remaining funds exceeding <strong>100,000 taka</strong> after applying for Sell Out.
+                            Accounts are not allowed to keep remaining funds exceeding <strong>100,000 taka</strong> after applying for Cash Out.
                         </p>
                     </div>
 
                     <div className="flex items-start">
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
-                            <strong>Note:</strong> Sell Out time is from <strong>10:00 AM to 10:00 PM</strong>. Only one Sell Out request can be made per day.
+                            <strong>Note:</strong> Cash Out time is from <strong>10:00 AM to 10:00 PM</strong>. Only one Cash Out request can be made per day.
                         </p>
                     </div>
 
                     <div className="flex items-start">
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
-                            The maximum Sell Out amount is <strong>10,000,000 taka</strong>.
+                            The maximum Cash Out amount is <strong>10,000,000 taka</strong>.
                         </p>
                     </div>
+
+                    {/* <div className="flex items-start">
+                        <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
+                        <p className="text-base">
+                            If the first Cash Out exceeds <strong>500,000 taka</strong>, a <strong>50% security Cash In</strong> is required for safety verification. The Cash Out can be completed after <strong>1 hour</strong>.
+                        </p> 
+                    </div> */}
 
                     <div className="flex items-start">
                         <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
                         <p className="text-base">
-                            If the first Sell Out exceeds <strong>500,000 taka</strong>, a <strong>50% security deposit</strong> is required for safety verification. The Sell Out can be completed after <strong>1 hour</strong>.
-                        </p>
-                    </div>
-
-                    <div className="flex items-start">
-                        <span className="text-gray-900 font-bold mr-3 mt-1">•</span>
-                        <p className="text-base">
-                            The <strong>50% Buy In</strong> only needs to be paid once. For future Sell Outs exceeding 500,000 taka, no additional security Buy In is required.
+                            The <strong>50% Buy In</strong> only needs to be paid once. For future Cash Outs exceeding 500,000 taka, no additional security Buy In is required.
                         </p>
                     </div>
                 </div>

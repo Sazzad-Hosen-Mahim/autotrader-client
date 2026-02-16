@@ -201,7 +201,7 @@ const OrderRecord = () => {
                                         <button
                                             disabled={activeTab === 'completed'}
                                             className={`w-full mt-4 py-3 rounded-xl font-bold transition-all shadow-sm ${activeTab === 'completed'
-                                                ? "bg-gray-100 text-gray-400 cursor-not-allowed"
+                                                ? "bg-black text-gray-400 cursor-not-allowed"
                                                 : "bg-black text-white hover:bg-gray-800 active:scale-[0.98]"
                                                 }`}
                                         >

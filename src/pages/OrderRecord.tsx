@@ -125,7 +125,7 @@ const OrderRecord = () => {
 
                                     {activeTab === "uncompleted" && (
                                         <div className="absolute top-0 right-0 w-12 h-12 overflow-hidden">
-                                            <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-500 transform rotate-45 translate-x-6 -translate-y-6 shadow-sm"></div>
+                                            <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-red-400 to-red-500 transform rotate-45 translate-x-6 -translate-y-6 shadow-sm"></div>
                                             <div className="absolute top-1 right-1 text-white text-[10px] font-bold z-10">
                                                 !
                                             </div>
@@ -202,10 +202,10 @@ const OrderRecord = () => {
                                             disabled={activeTab === 'completed'}
                                             className={`w-full mt-4 py-3 rounded-xl font-bold transition-all shadow-sm ${activeTab === 'completed'
                                                 ? "bg-black text-gray-400 cursor-not-allowed"
-                                                : "bg-black text-white hover:bg-gray-800 active:scale-[0.98]"
+                                                : "bg-red-500 text-white  active:scale-[0.98]"
                                                 }`}
                                         >
-                                            {activeTab === 'completed' ? 'Order Fulfilled' : 'Processing Order'}
+                                            {activeTab === 'completed' ? 'Completed' : 'Uncompleted Order'}
                                         </button>
                                     </div>
                                 </div>

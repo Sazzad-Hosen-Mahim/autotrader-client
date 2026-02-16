@@ -57,7 +57,7 @@ export default function CheckIn() {
         <div>
             {/* Hero Section */}
             <div className="">
-                <div className="rounded-b-lg relative bg-[url('/src/assets/check-in/checkin.jpg')] h-[280px] bg-cover bg-center flex items-center justify-center">
+                <div className="rounded-b-lg relative bg-[url('/src/assets/check-in/check-in.jpg')] h-[280px] bg-cover bg-center flex items-center justify-center">
                     <div className="rounded-b-lg absolute inset-0 bg-black/45" />
                     <div className="relative z-10 mx-8 px-4 py-10 max-w-2xl rounded-lg shadow-xl text-center">
                         <h2 className="text-4xl text-white font-semibold mb-5">Daily Check In</h2>

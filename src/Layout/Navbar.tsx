@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   Menu,
   User,
-  DollarSign,
+  // DollarSign,
   Mail,
 
   CreditCard,
@@ -11,7 +11,7 @@ import {
   Info,
   Settings,
 } from "lucide-react";
-import { MdHistory, MdPermContactCalendar } from "react-icons/md";
+import { MdHistory } from "react-icons/md";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logo from "@/assets/autotrader-logo-new.png";
 import "./Navbar.css";
@@ -21,7 +21,8 @@ import { useAppDispatch, useAppSelector } from "@/hooks/useRedux";
 import { logout } from "@/store/Slices/AuthSlice/authSlice";
 import { useGetSingleUserQuery } from "@/store/api/user/userApi";
 import AccountDetailsModal from "@/components/modal/AccountDetailsModal";
-// import { MdEmojiEvents } from "react-icons/md";
+import { TbCurrencyTaka } from "react-icons/tb";
+import { MdEmojiEvents } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -129,7 +130,8 @@ const Navbar = () => {
                         <Link to="/cash-out">
                           <button className="flex flex-col items-center cursor-pointer gap-2 hover:opacity-70 transition-opacity">
                             <div className="w-12 h-12 flex items-center justify-center">
-                              <DollarSign className="w-6 h-6" />
+                              {/* <DollarSign className="w-6 h-6" /> */}
+                              <TbCurrencyTaka className="w-6 h-6" />
                             </div>
                             <span className="text-xs text-center">Cash Out</span>
                           </button>
@@ -144,14 +146,7 @@ const Navbar = () => {
                             </span>
                           </button>
                         </Link>
-                        {/* <Link to="/score" className="flex flex-col items-center cursor-pointer gap-2 hover:opacity-70 transition-opacity">
-                          <button className="cursor-pointer">
-                            <div className="w-12 h-12 flex items-center justify-center">
-                              <MdEmojiEvents className="w-7 h-7" />
-                            </div>
-                            <span className="text-xs text-center">Score</span>
-                          </button>
-                        </Link> */}
+
                         <button
                           onClick={handleAccountDetailsClick}
                           className="flex flex-col items-center cursor-pointer gap-2 hover:opacity-70 transition-opacity"
@@ -240,12 +235,15 @@ const Navbar = () => {
               >
                 <MdEvent className="w-6 h-6" />
               </a>
-              <a
+              {/* <a
                 href="/contact"
                 className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 <MdPermContactCalendar className="w-6 h-6" />
-                {/* <MdEmojiEvents className="w-6 h-6" /> */}
+              </a> */}
+              <a href="/score" className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                <MdEmojiEvents className="w-6 h-6" />
+                {/* <span className="text-xs text-center">Score</span> */}
               </a>
             </div>
 

@@ -17,7 +17,28 @@
   --font-secondary: "Roboto", sans-serif;
   --font-snpro: "SN Pro", sans-serif;
 
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
 
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+
+    to {
+      height: 0;
+    }
+  }
 }
 
 @layer base {
@@ -35,8 +56,9 @@
     background: white;
   }
 
-  /* Prevent body scroll when sheet is open but keep content visible */
-  body:has([data-state="open"]) {
+  /* Prevent body scroll when sheet or dialog is open but keep content visible */
+  body:has([data-slot="sheet-content"][data-state="open"]),
+  body:has([data-slot="dialog-content"][data-state="open"]) {
     overflow: hidden;
   }
 }

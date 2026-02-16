@@ -1,6 +1,6 @@
 import { BsTelegram } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
-import Score from "./Score";
+// import Score from "./Score";
 
 
 const Contact = () => {
@@ -25,7 +25,7 @@ const Contact = () => {
       </div>
       {/* score div  */}
       <div>
-        <Score />
+        {/* <Score /> */}
       </div>
 
       <div className="mb-12">

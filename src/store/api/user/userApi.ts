@@ -80,6 +80,14 @@ export const userApi = baseApi.injectEndpoints({
             providesTags: ["Auth"],
         }),
 
+        getUserUncompletedProducts: builder.query({
+            query: (userId: number) => ({
+                url: `/user/get-user-uncompleted-products/${userId}`,
+                method: "GET",
+            }),
+            providesTags: ["Auth"],
+        }),
+
         // Mark mystery box as seen
         markMysteryBoxAsSeen: builder.mutation<
             any,
@@ -112,6 +120,7 @@ export const {
     useRemoveMysteryRewardMutation,
     useClaimCheckInRewardMutation,
     useGetUserCompletedProductsQuery,
+    useGetUserUncompletedProductsQuery,
     useMarkMysteryBoxAsSeenMutation,
     useUpdateWithdrawPasswordMutation,
 } = userApi;

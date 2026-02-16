@@ -43,7 +43,7 @@ export default function Help() {
                     {/* 1. Platform */}
                     <AccordionItem value="platform" className="border-b last:border-b-0 border-gray-300">
                         <AccordionTrigger className="py-5 text-xl font-semibold hover:no-underline">
-                            Platform
+                            1. Platform
                         </AccordionTrigger>
                         <AccordionContent className="pb-6 text-base text-gray-700 leading-relaxed space-y-4">
                             <p>
@@ -81,7 +81,7 @@ export default function Help() {
                     {/* 2. Cash Out */}
                     <AccordionItem value="cashout" className="border-b last:border-b-0 border-gray-300">
                         <AccordionTrigger className="py-5 text-xl font-semibold hover:no-underline">
-                            Cash Out
+                            2. Cash Out
                         </AccordionTrigger>
                         <AccordionContent className="pb-6 text-base text-gray-700 leading-relaxed space-y-4">
                             <p>

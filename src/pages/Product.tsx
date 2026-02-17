@@ -236,6 +236,7 @@ const Product: React.FC = () => {
                     >
                         {product.status}
                     </span>
+                    <span className="text-sm bg-red-200 text-red-500 font-medium ms-2 px-2 py-1 rounded">{purchaseData?.data?.mysteryboxMethod === "12x" ? "Flipbox" : purchaseData?.data?.mysteryboxMethod === "3x" ? "Smart Falcon" : ""}</span>
                 </div>
 
                 {/* Pricing Information */}

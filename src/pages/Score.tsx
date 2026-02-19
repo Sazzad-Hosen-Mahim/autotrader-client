@@ -112,19 +112,19 @@ const Score = () => {
                     </svg>
 
                     {/* Labels */}
-                    <div className="absolute top-28 left-12 text-xs font-semibold text-gray-700">
+                    <div className="absolute top-24 lg:top-28 left-7 lg:left-12 text-xs font-semibold text-gray-700">
                         0-19
                     </div>
-                    <div className="absolute top-10 left-28 text-xs font-semibold text-gray-700">
+                    <div className="absolute top-8 lg:top-10 left-18 lg:left-28 text-xs font-semibold text-gray-700">
                         20-39
                     </div>
-                    <div className="absolute top-5 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">
+                    <div className="absolute top-3 lg:top-5 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">
                         40-59
                     </div>
-                    <div className="absolute top-10 right-28 text-xs font-semibold text-gray-700">
+                    <div className="absolute top-7 lg:top-10 right-20 lg:right-28 text-xs font-semibold text-gray-700">
                         60-79
                     </div>
-                    <div className="absolute top-26 right-11 text-xs font-semibold text-gray-700">
+                    <div className="absolute top-26 right-5 lg:right-11 text-[10px] lg:text-xs font-semibold text-gray-700">
                         80-100
                     </div>
                 </div>

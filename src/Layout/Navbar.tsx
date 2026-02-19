@@ -252,7 +252,7 @@ const Navbar = () => {
               <button
                 onClick={toggleMobileMenu}
                 type="button"
-                className="text-white hover:text-gray-300 focus:outline-none"
+                className="text-black hover:text-gray-800 focus:outline-none"
               >
                 <svg
                   className="h-6 w-6"
@@ -285,30 +285,36 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a
+              {/* <a
                 href="/"
-                className="text-white block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+                className="text-black hover:text-white block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
               >
                 Home
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="/about"
-                className="text-white block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+                className="text-black hover:text-white  block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
               >
                 About
-              </a>
+              </a> */}
               <a
-                href="/services"
-                className="text-white block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+                href="/event"
+                className="text-black hover:text-white  block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
               >
-                Services
+                Event
               </a>
               <a
+                href="/score"
+                className="text-black hover:text-white  block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+              >
+                Score
+              </a>
+              {/* <a
                 href="/contact"
-                className="text-white block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+                className="text-black hover:text-white  block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact
-              </a>
+              </a> */}
             </div>
           </div>
         )}

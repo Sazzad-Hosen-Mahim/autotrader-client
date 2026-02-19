@@ -96,13 +96,13 @@ const History = () => {
     };
 
     const tabs: { label: string; value: HistoryType }[] = [
-        { label: 'Withdraw', value: 'withdraw' },
-        { label: 'Check In & Recharge', value: 'other' }
+        { label: 'Cashout', value: 'withdraw' },
+        { label: 'Check In & Cash In', value: 'other' }
     ];
 
     const subTabs: { label: string; value: 'checkIn' | 'recharge' }[] = [
         { label: 'Check In', value: 'checkIn' },
-        { label: 'Recharge', value: 'recharge' }
+        { label: 'Cash In', value: 'recharge' }
     ];
 
     const isLoading = activeTab === 'withdraw' ? withdrawLoading : otherLoading;
@@ -168,7 +168,7 @@ const History = () => {
                     <div className="p-12 text-center text-gray-500">
                         <p className="text-lg font-semibold">No transactions found</p>
                         <p className="text-sm mt-2">
-                            You haven't made any {activeTab === 'withdraw' ? 'withdraw' : subTab} transactions yet
+                            You haven't made any {activeTab === 'withdraw' ? 'Cashout' : subTab} transactions yet
                         </p>
                     </div>
                 )}

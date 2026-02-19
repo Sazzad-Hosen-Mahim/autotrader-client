@@ -140,13 +140,13 @@ const BindAccount = () => {
 
             {/* Account Type Selection */}
             <div className="space-y-2">
-                <label className="block text-sm font-medium">Withdrawal Method *</label>
+                <label className="block text-sm font-medium">Cash Out Method *</label>
                 <select
                     value={accountType}
                     onChange={(e) => setAccountType(e.target.value as "BankTransfer" | "MobileBanking")}
                     className="w-full border px-3 py-2 rounded"
                 >
-                    <option value="">Select Withdrawal Method</option>
+                    <option value="">Select Cash Out Method</option>
                     <option value="BankTransfer">Bank Transfer</option>
                     <option value="MobileBanking">Mobile Banking</option>
                 </select>

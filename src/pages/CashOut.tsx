@@ -10,7 +10,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useNavigate } from "react-router-dom";
 import ConfirmWithdrawPasswordModal from "@/components/modal/ConfirmWithdrawPasswordModal";
-
+import bkashLogo from "@/assets/payment/bkash.png";
+import nagadLogo from "@/assets/payment/nagad.png";
+import rocketLogo from "@/assets/payment/rocket.png";
+import upayLogo from "@/assets/payment/upay.png";
 const CashOut = () => {
     const [amount, setAmount] = useState("");
     const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
@@ -160,14 +163,28 @@ const CashOut = () => {
                 <Label className="text-sm font-medium text-slate-600 mb-2 block">
                     Collection Address
                 </Label>
-                <Card className={`${hasWithdrawalAddress ? 'border-green-200 bg-green-50' : 'border-slate-200'}`}>
+                <Card
+                    className={`${hasWithdrawalAddress ? 'border-green-200 bg-green-50' : 'border-slate-200'} cursor-pointer transition-colors active:bg-slate-50`}
+                    onClick={() => !hasWithdrawalAddress && navigate("/bind-account")}
+                >
                     <CardContent className="pt-4">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
-                                <div className="bg-yellow-100 p-2 rounded">
-                                    <span className="text-2xl">
-                                        {isMobileBanking ? "📱" : "🏦"}
-                                    </span>
+                                <div className={`${isMobileBanking && ['bkash', 'nagad', 'rocket', 'upay'].includes(user.withdrawalAddressAndMethod?.mobileBankingName?.toLowerCase() || '') ? '' : 'bg-yellow-100 p-2 rounded'}`}>
+                                    {isMobileBanking ? (
+                                        (() => {
+                                            const provider = user.withdrawalAddressAndMethod?.mobileBankingName?.toLowerCase();
+                                            switch (provider) {
+                                                case 'bkash': return <img src={bkashLogo} alt="bkash" className="h-8 w-8 object-contain rounded" />;
+                                                case 'nagad': return <img src={nagadLogo} alt="nagad" className="h-8 w-8 object-contain rounded" />;
+                                                case 'rocket': return <img src={rocketLogo} alt="rocket" className="h-8 w-8 object-contain rounded" />;
+                                                case 'upay': return <img src={upayLogo} alt="upay" className="h-8 w-8 object-contain rounded" />;
+                                                default: return <span className="text-2xl">📱</span>;
+                                            }
+                                        })()
+                                    ) : (
+                                        <span className="text-2xl">🏦</span>
+                                    )}
                                 </div>
                                 <div>
                                     <p className="font-medium text-slate-900">

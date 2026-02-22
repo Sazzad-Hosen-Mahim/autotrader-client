@@ -203,13 +203,18 @@ const BindAccount = () => {
                 <>
                     <div>
                         <label className="block text-sm font-medium mb-1">Wallet *</label>
-                        <input
-                            type="text"
-                            placeholder="Please enter wallet method"
+                        <select
                             value={provider}
                             onChange={(e) => setProvider(e.target.value)}
                             className="w-full border px-3 py-2 rounded"
-                        />
+                        >
+                            <option value="">Select Wallet</option>
+                            <option value="bkash">bKash</option>
+                            <option value="nagad">Nagad</option>
+                            <option value="rocket">Rocket</option>
+                            <option value="upay">Upay</option>
+                            <option value="Others">Others</option>
+                        </select>
                     </div>
                     <div>
                         <label className="block text-sm font-medium mb-1">Wallet Number *</label>

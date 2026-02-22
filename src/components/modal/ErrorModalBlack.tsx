@@ -27,7 +27,7 @@ const ErrorModalBlack = ({ isOpen, message, onClose }: ErrorModalProps) => {
                     <X size={24} />
                 </button> */}
 
-                <h1 className="text-lg text-center font-semibold mb-4 border-b-2 border-gray-400 py-3">Notice</h1>
+                <h1 className="text-lg text-center font-semibold mb-4 border-b-2 border-gray-300 py-3">Notice</h1>
 
                 {/* Message */}
                 <div className="px-6">
@@ -36,7 +36,7 @@ const ErrorModalBlack = ({ isOpen, message, onClose }: ErrorModalProps) => {
                     </div>
 
                     <div className="mt-5 flex justify-center">
-                        <button onClick={onClose} className="bg-golden hover:bg-golden/80 cursor-pointer text-white px-4 py-2 w-full rounded">Close</button>
+                        <button onClick={onClose} className="bg-primaryButton hover:bg-primaryButton/80 cursor-pointer text-white px-4 py-2 w-full rounded">Close</button>
                     </div>
                 </div>
             </div>

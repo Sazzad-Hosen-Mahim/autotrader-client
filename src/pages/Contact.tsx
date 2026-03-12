@@ -32,8 +32,15 @@ const Contact = () => {
         <h1 className="mt-5 text-2xl font-semibold">Knowledge Base</h1>
 
         <div className="p-8 border-black border-2 mt-12">
-          <div className="flex justify-center items-center gap-2">
-            <BsTelegram className="w-12 h-12" />
+          <div className="transition">
+            <a
+              href="https://t.me/OfficialCustomerservice_00"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-2 cursor-pointer"
+            >
+              <BsTelegram className="w-12 h-12" />
+            </a>
           </div>
         </div>
         <div className="p-8 border-black border-2 mt-12">

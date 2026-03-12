@@ -7,12 +7,12 @@ import { toast } from "sonner";
 // Define reward structure with required amount (numeric) and day number
 const rewards = [
     { day: "1 Day", amount: "৳300", numericAmount: 300, dayNum: 1 },
-    { day: "2 Day", amount: "৳700", numericAmount: 700, dayNum: 2 },
-    { day: "3 Day", amount: "৳1500", numericAmount: 1500, dayNum: 3 },
-    { day: "4 Day", amount: "৳3400", numericAmount: 3400, dayNum: 4 },
-    { day: "5 Day", amount: "৳6000", numericAmount: 6000, dayNum: 5 },
-    { day: "6 Day", amount: "৳12000", numericAmount: 12000, dayNum: 6 },
-    { day: "7 Day", amount: "৳20000", numericAmount: 20000, dayNum: 7 },
+    { day: "2 Day", amount: "৳500", numericAmount: 500, dayNum: 2 },
+    { day: "3 Day", amount: "৳700", numericAmount: 700, dayNum: 3 },
+    { day: "4 Day", amount: "৳900", numericAmount: 900, dayNum: 4 },
+    { day: "5 Day", amount: "৳1100", numericAmount: 1100, dayNum: 5 },
+    { day: "6 Day", amount: "৳1300", numericAmount: 1300, dayNum: 6 },
+    { day: "7 Day", amount: "৳2000", numericAmount: 2000, dayNum: 7 },
 ];
 
 export default function CheckIn() {

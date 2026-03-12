@@ -164,7 +164,7 @@ const Task: React.FC = () => {
       return;
     }
     if ((user?.orderRound?.round === "round_one") && (user?.completedOrdersCount === 25)) {
-      setErrorMessageBlack("Your round one has been completed. Now, to start the next round, please contact your senior consultant.");
+      setErrorMessageBlack("Your round one has been completed. Now, to start the next round, please contact your customer services.");
       setOpenErrorModalBlack(true);
       return;
     }
